@@ -1,32 +1,31 @@
-## Welcome to Watch It
+## Welcome to Cash It
 
-**Description:**
-Watch It is structured around six primary entities to manage and track movie-related data efficiently:
+### Project Overview
 
-1. **User:** Each user has a unique ID, username, password, and personal details. Users can subscribe to various plans, bookmark movies for later viewing, and keep a record of watched movies.
-2. **Subscription:** Subscriptions are divided into Basic, Standard, and Premium plans, each with its pricing and start date.
-3. **Movie:** Movies have several attributes, including ID, title, release date, duration, cast, genres, director, language, IMDb score, country, budget, revenue, and poster image.
-4. **Cast:** Actors in the movies are detailed with their first name, last name, age, gender, list of movies, and nationality.
-5. **Director:** Directors are described with their first name, last name, age, gender, list of movies, and nationality.
-6. **User Watch Record:** This entity tracks users' movie-watching activities, including the date watched and user ratings.
+This project introduces a digital wallet system designed to facilitate secure financial transactions for users. It includes features tailored for both administrators and users, ensuring efficient management of accounts and transactions.
 
-**Constraints:**
-Subscriptions are valid for 30 days. Users on Basic, Standard, or Premium plans have specific limits on the number of movies they can watch per month. After 30 days, users must renew their subscription to continue watching movies.
+**User Requirements:**
 
-**Functionalities:**
+**Administrator Functionality:**
 
-1. **CRUD Operations:** Users can create, update, and delete entities like movies, subscriptions, and watch records.
-2. **View Watchlist:** Users can view a list of movies marked for later viewing.
-3. **View Watch History:** Users can see all the movies they have watched.
-4. **Movie Rating Update:** Movie ratings are updated based on user watch records.
-5. **Top-Rated Movies:** Users can view the highest-rated movies based on user ratings.
-6. **Subscription Analysis:** Admins can view the most popular subscription plan among Basic, Standard, and Premium.
-7. **Revenue Analysis:** Admins can analyze revenue trends by summing up plan prices subscribed in a month.
-8. **View Cast and Directors:** Users can access information about cast members and directors.
-9. **Search Functionality:** Users can search for movies, directors, and actors by name.
-10. **Genre Search:** Users can search for and display movies by genre.
-11. **Top Watched Movies:** Users can see the most-watched movies.
-12. **Recent Movies:** Users can explore recently released movies.
+1. **Record Management:** Administrators can perform various operations related to user accounts to ensure smooth management.
+2. **Account Adjustment:** Administrators have the authority to adjust user account balances as needed.
+3. **Transaction Monitoring:** Administrators can view registered users, their balances, transaction histories, and take necessary actions.
 
-**About:**
-Watch It is a console-based software application providing access to an extensive library of movies. With a wide variety of genres, Watch It caters to diverse tastes and preferences, ensuring a seamless streaming experience. The application is developed in Java and employs Object-Oriented Programming principles.
+**User Functionality:**
+
+1. **Account Creation:** Users can sign up for the digital wallet system by providing the necessary credentials for account creation.
+2. **Financial Operations:** Users can perform various financial operations such as checking their current balance, sending money to others, requesting money from others, and managing their transaction histories.
+3. **Profile Management:** Users can edit their profile information, including usernames and passwords.
+
+**System Management:**
+
+The system includes a CashIt module responsible for user authentication, registration, and interaction. It identifies users as either regular users or administrators, provides registration options, and manages data reading and writing tasks for user, admin, and transaction data.
+
+**Transaction Handling:**
+
+Transactions are managed through a dedicated class, ensuring smooth processing between users. Recent transaction details, including sender, receiver, amount, date, and time, are provided.
+
+**File Handling:**
+
+File handling functionalities are provided through the FileReader and FileWriter classes. These classes facilitate reading and writing user data, admin data, and transaction data to respective files, ensuring data persistence and system continuity.
